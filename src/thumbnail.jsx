@@ -1,5 +1,5 @@
 var React = require('react');
-var Badge = require('./badge');
+var Button = require('./button');
 
 module.exports = React.createClass({
     render: function() {
@@ -11,7 +11,7 @@ module.exports = React.createClass({
                         <h3>{this.props.header}</h3>
                         <p>{this.props.description}</p>
                         <p>
-                            <Badge title={this.props.title} number={this.props.number} />
+                            <Button title={this.props.title} className="btn-primary" subTitle={this.props.number} subTitleClassName="badge"/>
                         </p>
                     </div>
                 </div>

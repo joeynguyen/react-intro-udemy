@@ -1,5 +1,6 @@
 var React = require('react');
 var ThumbnailList = require('./thumbnail-list');
+var Dropdown = require('./dropdown');
 
 var options = {
     thumbnailData: [
@@ -21,9 +22,19 @@ var options = {
         }
     ]
 };
+var ulOptions = {
+    title: 'Choose a dessert',
+    items: [
+        'Apple pie',
+        'Peach cobbler',
+        'Coconut cream pie'
+    ]
+};
 
 // React, please render this class
 var thumbnailList = React.createElement(ThumbnailList, options);
+var dropdown = React.createElement(Dropdown, ulOptions);
 
 // React, after you render this class, place it in the '#container' div
 React.render(thumbnailList, document.querySelector('.target') );
+React.render(dropdown, document.querySelector('.target2') );
