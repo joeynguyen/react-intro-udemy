@@ -25,9 +25,9 @@ var options = {
 var ulOptions = {
     title: 'Choose a dessert',
     items: [
-        'Apple pie',
-        'Peach cobbler',
-        'Coconut cream pie'
+        { id: 1, name: 'Apple pie' },
+        { id: 2, name: 'Peach cobbler'},
+        { id: 3, name: 'Coconut cream pie'}
     ]
 };
 

@@ -8,7 +8,7 @@ module.exports = React.createClass({
     },
     render: function() {
         var list = this.props.items.map(function(item) {
-            return <ListItem item={item} />
+            return <ListItem key={item.id} item={item.name} />
         });
         // var visible;
         // if(this.state.dropdownOpen) {
